@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Charles</title>
+  <link rel="stylesheet" href="assets/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <h1>Charles</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main class="content">
+    <h2>My Projects</h2>
+    <div class="project-list">
+      <div class="project-card clickable" data-media="video" data-src="assets/videos/smart-room.mp4">
+        <h3>Smart Room Automation</h3>
+        <p>IoT system using RFID, sensors, and a Raspberry Pi Pico W to automate blinds, lights, and temperature monitoring.</p>
+      </div>
+      <div class="project-card clickable" data-media="image" data-src="assets/images/payroll-system.png">
+        <h3>Payroll System</h3>
+        <p>Desktop GUI with Tkinter and MySQL to manage employee salary, deductions, and reports.</p>
+      </div>
+      <!-- Add more projects here, set data-media to 'image' or 'video' and data-src to the file path -->
+    </div>
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div id="modal-media"></div>
+      </div>
+    </div>
+  </main>
+  <script src="assets/script.js"></script>
+</body>
+</html>
